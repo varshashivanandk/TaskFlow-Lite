@@ -12,7 +12,8 @@
 - 🌗 Theme toggle (Light/Dark mode)
 - 📱 Mobile-friendly layout
 - 💾 Persistent storage via LocalStorage
-- ⬆️⬇️ Smooth scroll-to-top and scroll-to-bottom buttons (desktop only)
+-  - Favicon Added
+-  - Deployed on Netlify
 
 ---
 
@@ -20,7 +21,7 @@
 
 ### 1. **Frontend Only**
 - Built with HTML, CSS, and JavaScript.
-- No backend or server required—perfect for personal use or static hosting.
+- No backend or server required, perfect for personal use or static hosting.
 
 ### 2. **Modular JavaScript**
 - Code split across logical modules:
@@ -30,8 +31,6 @@
 
 ### 3. **Responsive UI**
 - Designed with CSS media queries.
-- Mobile layout stacks form and task list vertically.
-- Desktop layout displays form and task list side-by-side.
 
 ---
 
@@ -108,19 +107,8 @@ renderTaskList(tasks)
 ## 📱 Mobile Optimization
 
 - 🎚️ Theme toggle button shown at the top-right corner
-- ⬆️⬇️ Scroll buttons are hidden on mobile for a cleaner interface
 - 📦 Task cards stack vertically
 - 🎨 Text colors adapt automatically for light/dark mode
-
----
-
-## 🧑‍💻 How to Use
-
-1. 📥 Clone or download the project files.
-2. 🌐 Open `index.html` in any browser.
-3. ✅ Start adding your tasks!
-4. 🌓 Toggle between Light and Dark modes.
-5. 💾 All tasks are saved in your browser's `localStorage`.
 
 ---
 
