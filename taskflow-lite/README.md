@@ -64,6 +64,34 @@ Stored as a JSON array of objects:
 - **`tags`**: Array of strings to categorize tasks (e.g., `["home", "personal"]`)
 - **`completed`**: Boolean value indicating whether the task is done (`true` or `false`)
 
+### Folder Structure
+```bash
+taskflow-lite/
+│
+├── index.html                # Main HTML file for Taskflow Lite
+├── app.js                    # Main script that connects all modules
+├── README.md                 # Project overview and documentation
+│
+├── files/                    # Favicon and PWA assets
+│   ├── android-chrome-192x192.png
+│   ├── android-chrome-512x512.png
+│   ├── apple-touch-icon.png
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── favicon.ico
+│   ├── logo.png              # Project logo (used in header or banner)
+│   └── site.webmanifest      # Web manifest for PWA support
+│
+├── modules/                  # JavaScript modules for separation of logic
+│   ├── render.js             # DOM manipulation and rendering tasks
+│   ├── storage.js            # LocalStorage interactions
+│   └── validation.js         # Form input validation
+│
+└── styles/
+    └── main.css              # All styling: layout, themes, responsiveness
+
+```
+
 ### 🔄 Event Flow Diagram
 
 #### 📝 Task Creation Flow
