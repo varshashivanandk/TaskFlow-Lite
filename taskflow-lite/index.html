@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow Lite</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="files/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="files/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="files/favicon-16x16.png">
+  <link rel="manifest" href="files/site.webmanifest">
+</head>
+<body>
+  <header class="brand-header">
+    <img src="files/logo.png" alt="TaskFlow Logo" class="brand-logo" />
+    <div class="brand-text">
+      <h1 class="brand-title"><b>TaskFlow Lite</b></h1>
+      <h3><em>Your Client-Side Task Management Solution</em></h3>
+    </div>
+<button id="modeToggle">
+  Theme <span class="icon">🌙</span>
+</button>
+  </header>
+
+  <main class="container card-wrapper">
+    <div class="card left-card">
+            <h2>📝 Add Task</h2>
+      <form id="task-form" novalidate>
+        <label for="task-input">Task Title *</label>
+        <input type="text" id="task-input" name="task" placeholder="Your Task" maxlength="50" required /><br><br>
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" placeholder="Details (optional)"></textarea><br><br>
+
+        <label for="due-date">Due Date</label>
+        <input type="date" id="due-date" name="dueDate" /><br><br>
+
+        <label for="priority">Priority *</label>
+        <select id="priority" name="priority" required>
+          <option value="select" selected>Select</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select><br><br>
+
+        <label for="tags">Tags</label>
+        <input type="text" id="tags" name="tags" placeholder="Tags (e.g., College, Work)" /><br><br>
+
+        <button type="submit">Add Task</button>
+        <button type="reset" title="Clear form inputs">⟳</button>
+      </form>
+    </div>
+
+    <div class="card right-card">
+    <h2>📝 Your Tasks</h2>
+    <div class="task-container">
+      <ul id="task-list"></ul>
+    </div>
+    </div>
+  </main>
+
+
+  <footer class="footer">
+    <p>&copy; 2025. TaskFlow Lite. All Rights Reserved.</p>
+  </footer>
+  <script type="module" src="app.js"></script>
+
+</body>
+</html>
