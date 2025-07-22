@@ -52,6 +52,7 @@ Stored as a JSON array of objects:
     "completed": false
   }
 ]
+```
 
 ### 📋 Task Object Fields
 
