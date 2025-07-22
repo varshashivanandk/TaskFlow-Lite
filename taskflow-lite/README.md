@@ -96,17 +96,13 @@ taskflow-lite/
 
 #### 📝 Task Creation Flow
 
-[User submits the form]
-↓
-validateTaskInput()
-↓
-Create task object
-↓
-saveTasks(tasks)
-↓
-renderTaskList(tasks)
-↓
-[Task appears in the UI]
+1. User submits the form
+2. `validateTaskInput()`
+3. Create task object
+4. `saveTasks(tasks)`
+5. `renderTaskList(tasks)`
+6. Task appears in the UI
+
 
 
 #### 🧑‍💻 User Actions
